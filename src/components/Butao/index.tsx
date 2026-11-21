@@ -8,7 +8,7 @@ interface butaoProps extends ComponentProps<"button"> {
 export function Butao({ texto, ...props }: butaoProps) {
   return (
     <>
-      <button {...props}>{texto}</button>
+      <button className="butao" {...props}>{texto}</button>
     </>
   );
 }

@@ -7,9 +7,7 @@ type question = {
 
 export function Questions({ q1, q2 }: question) {
 
-  function Choice(){
-    
-  }
+ 
 
   return (
     <>
