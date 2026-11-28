@@ -6,10 +6,10 @@ interface butaoProps extends ComponentProps<"button"> {
   texto: React.ReactNode;
 }
 
-export function Butao({ texto, ...props }: butaoProps) {
+export function Butao({ texto, className, ...props }: butaoProps) {
   return (
     <>
-      <button className="butao" {...props}>
+      <button className={`butao ${className ?? ""}`.trim()} {...props}>
         {texto}
       </button>
     </>

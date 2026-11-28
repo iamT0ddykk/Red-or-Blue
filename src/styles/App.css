@@ -7,3 +7,44 @@
   --dark-red: #d63c3c;
   --dark-blue: rgb(29, 98, 202);
 }
+.next-button {
+  display: block;
+  min-height: 64px;
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--blue);
+  color: #fff;
+  font:
+    700 1rem "Poppins",
+    sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.next-button:not(:disabled):hover {
+  background-color: var(--dark-blue);
+}
+
+.next-button:not(:disabled):active {
+  transform: translateY(2px);
+}
+
+.next-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -6px;
+}
+
+.next-button:disabled {
+  background-color: #3a3b3d;
+  color: #a4a6a8;
+  cursor: not-allowed;
+}
+.btn-area {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}

@@ -1,0 +1,38 @@
+.butao {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--blue, #3b82f6);
+  color: #fff;
+  font:
+    700 1rem "Poppins",
+    sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.butao:not(:disabled):hover {
+  background-color: var(--dark-blue, #1d62ca);
+}
+
+.butao:not(:disabled):active {
+  transform: translateY(2px);
+}
+
+.butao:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.butao:disabled {
+  background-color: #3a3b3d;
+  color: #a4a6a8;
+  cursor: not-allowed;
+}

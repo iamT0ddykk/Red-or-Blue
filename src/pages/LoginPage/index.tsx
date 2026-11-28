@@ -1,5 +1,5 @@
 import { Butao } from "../../components/Butao";
-import { Heading } from "../../components/Heading";
+import { Heading } from "../../components/Header";
 import "./login.css";
 
 export function LoginPage() {
