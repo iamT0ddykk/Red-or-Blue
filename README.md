@@ -1,105 +1,59 @@
 # Red or Blue
 
-**Red or Blue** é uma aplicação interativa de escolhas baseada no formato "Você prefere?". O usuário navega por uma coleção de dilemas divertidos e escolhe entre duas alternativas distintas.
+Um jogo de dilemas no estilo **"O que você prefere?"**. Escolha entre uma opção vermelha e uma azul e avance por uma coleção de 50 perguntas.
 
-O projeto foi desenvolvido com React, TypeScript e Vite.
+<p align="center">
+	<img src="./public/readme-redorblue.png" alt="Tela do jogo Red or Blue com duas opções de escolha" width="49%" />
+	<img src="./public/readme-criar-pergunta.png" alt="Formulário para propor duas opções de pergunta" width="49%" />
+</p>
 
 ## Funcionalidades
 
-- Apresenta duas alternativas lado a lado
-- Disponibiliza 50 perguntas
-- Permite avançar para o próximo dilema
-- Utiliza uma interface em vermelho e azul
-- Organiza a interface em componentes reutilizáveis
+- 50 dilemas com duas alternativas para escolher.
+- A seleção habilita o botão para avançar e indica a escolha pela cor.
+- Navegação entre o jogo, a tela de login e o formulário para propor perguntas.
+
+> [!NOTE]
+> Login e envio de perguntas são telas demonstrativas no frontend. Ainda não há autenticação nem persistência de dados.
 
 ## Tecnologias
 
-- React 19
-- TypeScript
-- Vite
-- CSS
-- ESLint
+- React 19 e TypeScript
+- Vite 8
+- React Router e React Icons
+- CSS e ESLint
 
-## Pré-requisitos
+## Executar localmente
 
-Antes de começar, instale:
-
-- Node.js 20 ou superior
-- npm
-
-## Como executar
-
-1. Clone o repositório:
+Requisitos: Node.js compatível com Vite 8 (20.19+ ou 22.12+) e npm.
 
 ```bash
 git clone https://github.com/iamT0ddykk/Red-or-Blue.git
-```
-
-2. Entre na pasta do projeto:
-
-```bash
 cd Red-or-Blue
-```
-
-3. Instale as dependências:
-
-```bash
 npm install
-```
-
-4. Inicie o servidor de desenvolvimento:
-
-```bash
 npm run dev
 ```
 
-5. Abra no navegador o endereço exibido pelo Vite, normalmente `http://localhost:5173`.
+Abra o endereço local exibido pelo Vite, geralmente `http://localhost:5173`.
 
-## Scripts disponíveis
+## Scripts
 
-| Comando           | Descrição                                 |
-| ----------------- | ----------------------------------------- |
-| `npm run dev`     | Inicia o servidor de desenvolvimento      |
-| `npm run build`   | Cria a versão de produção na pasta `dist` |
-| `npm run preview` | Executa localmente a versão de produção   |
-| `npm run lint`    | Verifica problemas com ESLint             |
+| Comando           | Descrição                                                 |
+| ----------------- | --------------------------------------------------------- |
+| `npm run dev`     | Inicia o servidor de desenvolvimento.                     |
+| `npm run build`   | Verifica os tipos e gera a versão de produção em `dist/`. |
+| `npm run preview` | Serve localmente a versão de produção.                    |
+| `npm run lint`    | Executa o ESLint.                                         |
 
-## Estrutura principal
+## Estrutura
 
 ```text
 src/
-├── App.tsx                 # Componente principal
-├── opcao.ts                # Lista de perguntas e alternativas
-├── components/
-│   ├── Butao/              # Botão de próximo dilema
-│   └── Questions/          # Alternativas da pergunta
-├── styles/                 # Estilos da aplicação
-└── assets/                 # Recursos estáticos
+├── App.tsx                  # Fluxo principal do jogo
+├── opcao.ts                 # Dilemas e alternativas
+├── components/              # Cabeçalho, alternativas e botão
+├── pages/                   # Telas de login e criação de perguntas
+└── styles/                  # Estilos globais e do jogo
+public/
+└── readme-*.png             # Capturas usadas neste README
 ```
-
-## Como contribuir
-
-1. Faça um fork do projeto.
-2. Crie uma branch:
-
-```bash
-git checkout -b feature/minha-nova-feature
-```
-
-3. Faça suas alterações e confirme o commit:
-
-```bash
-git commit -m "feat: adiciona nova feature"
-```
-
-4. Envie sua branch:
-
-```bash
-git push origin feature/minha-nova-feature
-```
-
-5. Abra um Pull Request.
-
-## Licença
-
-Este projeto ainda não possui uma licença definida.
