@@ -16,15 +16,6 @@ form input {
   border-radius: 10px;
 }
 
-button {
-  background-color: #3b82f6;
-  border-width: 0;
-  padding: 15px;
-  border-radius: 25px;
-  color: white;
-  width: 150px;
-}
-
 .form-container {
   display: flex;
   align-items: center;

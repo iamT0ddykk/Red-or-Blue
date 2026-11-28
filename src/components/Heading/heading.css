@@ -1,0 +1,24 @@
+header {
+  background-color: var(--bg-dark);
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  position: fixed;
+  right: 10%;
+}
+.icons-container {
+  display: flex;
+  gap: 5px;
+}
+button {
+  background-color: rebeccapurple;
+}

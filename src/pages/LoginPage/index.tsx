@@ -1,13 +1,12 @@
+import { Butao } from "../../components/Butao";
+import { Heading } from "../../components/Heading";
 import "./login.css";
 
 export function LoginPage() {
   return (
     <>
       <div>
-        <header>
-          <h1>Fazer Login</h1>
-          
-        </header>
+        <Heading texto="Fazer Login"></Heading>
         <div className="form-container">
           {" "}
           <form action="">
@@ -24,7 +23,9 @@ export function LoginPage() {
               required
             />
 
-            <button type="submit"> Fazer Login </button>
+            <Butao texto="Fazer Login" type="submit">
+              {" "}
+            </Butao>
           </form>
         </div>
       </div>

@@ -1,0 +1,39 @@
+form {
+  background-color: #18191a;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 39vw;
+  height: 20vh;
+  min-width: 30vw;
+  justify-content: center;
+  gap: 5px;
+  zoom: 1.1;
+}
+form input {
+  border-width: 0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question-container {
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.inpt-red {
+  background-color: #ef4444;
+  color: white;
+}
+.inpt-blue {
+  background-color: #3b82f6;
+  color: white;
+}

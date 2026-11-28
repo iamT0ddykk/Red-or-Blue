@@ -2,6 +2,7 @@ import { useState } from "react";
 import { opcao } from "./opcao";
 import "./styles/App.css";
 import { Butao } from "./components/Butao";
+import { Heading } from "./components/Heading";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -9,7 +10,6 @@ function App() {
 
   const q1 = opcao[index].q1;
   const q2 = opcao[index].q2;
-
 
   function Click() {
     setIsDisabled(false);
@@ -22,9 +22,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1>Oque você prefere?</h1>
-      </header>
+      <Heading texto="O que voce prefere?"></Heading>
 
       <div className="questions">
         <div className="q1" onClick={() => Click()}>
